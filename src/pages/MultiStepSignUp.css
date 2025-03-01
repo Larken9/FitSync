@@ -1,0 +1,67 @@
+/* MultiStepSignUp.css */
+
+/* Container for the entire wizard */
+.multi-step-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  /* Each step section (membership, personal info, confirmation) */
+  .step-container {
+    margin-bottom: 20px;
+  }
+  
+  /* Membership options row */
+  .membership-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Each membership card */
+  .membership-card {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 40%;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  /* Highlight the selected membership card in green */
+  .membership-card.selected {
+    border-color: green;
+  }
+  
+  /* Row for the "Back" and "Next" buttons */
+  .button-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  /* Form groups for labels/inputs */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  

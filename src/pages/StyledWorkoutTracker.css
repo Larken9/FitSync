@@ -1,0 +1,97 @@
+/* Use a CSS variable for the light blue accent color */
+:root {
+    --accent-color: #ADD8E6;
+  }
+  
+  /* Main container for the workout tracker */
+  .workout-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  /* Timer displayed at the top center when the workout starts */
+  .workout-timer {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent-color);
+  }
+  
+  /* Heading for the page */
+  .workout-heading {
+    color: var(--accent-color);
+    margin-bottom: 20px;
+  }
+  
+  /* Exercise dropdown container */
+  .exercise-dropdown {
+    margin-bottom: 20px;
+  }
+  
+  .exercise-dropdown label {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  /* Dropdown (select) styling */
+  .exercise-select {
+    padding: 8px;
+    border: 2px solid var(--accent-color);
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 14px;
+  }
+  
+  /* Table for sets, intensity, weight, reps, rest time */
+  .workout-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .workout-table thead {
+    background-color: var(--accent-color);
+  }
+  
+  .workout-table th {
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .workout-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Inputs for weight and reps */
+  .weight-input,
+  .reps-input {
+    width: 60px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* "Start" button styling */
+  .start-button {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .start-button:hover {
+    background-color: #9ac7dc; /* Slightly darker shade on hover */
+  }
+  

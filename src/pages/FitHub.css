@@ -1,0 +1,148 @@
+/* Overall container: sidebar + main content */
+.fithub-container {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Sidebar styling */
+  .fithub-sidebar {
+    width: 220px;
+    background-color: #2d2d2d;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .sidebar-logo {
+    margin: 0;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Remove underline and make links bold white */
+  .sidebar-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Slight color change on hover, no underline */
+  .sidebar-menu li a:hover {
+    color: #ddd;
+    text-decoration: none;
+  }
+  
+  .sidebar-menu li {
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  
+  /* (Optional) remove or override this to avoid underlining the entire li on hover */
+  .sidebar-menu li:hover {
+    text-decoration: none;
+  }
+  
+  /* Main section: top bar + content */
+  .fithub-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Top bar with search */
+  .fithub-topbar {
+    height: 50px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .fithub-search {
+    width: 300px;
+    max-width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Main content area (dashboard) */
+  .fithub-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fafafa;
+  }
+  
+  .fithub-row {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  /* Panel styling */
+  .fithub-panel {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-right: 20px;
+    flex: 1;
+  }
+  
+  .fithub-panel:last-child {
+    margin-right: 0;
+  }
+  
+  .fithub-panel-graph {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .month-selector button {
+    margin: 0 5px;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .panel-graph {
+    margin-top: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Stats panel on the right */
+  .fithub-panel-stats .stat-box {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #eee;
+  }
+  
+  .stat-box h4 {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .stat-box p {
+    margin: 5px 0 0 0;
+    font-size: 0.85rem;
+    color: #555;
+  }
+  
